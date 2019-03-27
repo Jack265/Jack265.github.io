@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- layout.ejs-->
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A website for A-RSnippet Hexo Theme">
+    <meta name="author" content="Yingjie Hu">
+    <meta name="keyword" content="hexo, hexo theme, A-RSnippet, responsive, bootstrap">
+    <link rel="canonical" href="http://yoursite.com/新建文本文档/">
+    <link rel="shortcut icon" href="https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-person-128.png">
+    <link rel="alternate" type="application/atom+xml" title="A-RSnippet &lt;a class=&#34;github-button&#34; href=&#34;https://github.com/huyingjie/hexo-theme-A-RSnippet&#34; data-icon=&#34;octicon-star&#34; data-show-count=&#34;true&#34; aria-label=&#34;Star huyingjie/hexo-theme-A-RSnippet on GitHub&#34;&gt;Star&lt;/a&gt;" href="/atom.xml">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <title>
+        
+        Hexo建站：在 GitHub Pages 上搭建 Hexo 个人免费博客教程｜An A-RSnippet Hexo Theme
+        
+    </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    
+      <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="/css/highlight.css">
+    
+
+    
+      <script id="dsq-count-scr" src="//hexo-a-rsnippet.disqus.com/count.js" async></script>
+    
+
+
+    
+      <meta name="google-site-verification" content="wtCjI-zcpr2FYwWS3sI4OWzMK9e7VomDrZyxpVUUIng">
+    
+
+    
+
+    
+
+
+    
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+    
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-38355881-1', 'auto');
+    ga('send', 'pageview');
+</script>
+
+
+
+
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+    <!-- user customization -->
+    <link rel="stylesheet" href="/css/arsnippet.css">
+    <script src="/js/arsnippet.css.js"></script>
+</head>
+
+<style>
+    header.intro-header {
+        background-image: url('')
+    }
+</style>
+<!-- hack iOS CSS :active style -->
+<body ontouchstart="" class="animated fadeIn">
+<header>
+  <nav class="navbar navbar-default header-navbar" id="nav-top" data-ispost="true" data-istags="false" data-ishome="false">
+    <div class="container-fluid">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" aria-expanded="false" data-target="#website_navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <span class="navbar-brand animated pulse">
+          <a class="brand-logo" href="/">
+            A-RSnippet <a class="github-button" href="https://github.com/huyingjie/hexo-theme-A-RSnippet" data-icon="octicon-star" data-show-count="true" aria-label="Star huyingjie/hexo-theme-A-RSnippet on GitHub">Star</a>
+          </a>
+        </span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="website_navbar">
+          <ul class="nav navbar-nav navbar-right">
+              
+                <li>
+                  <a href="/">home</a>
+                </li>
+              
+                <li>
+                  <a href="/tutorial/">Tutorial</a>
+                </li>
+              
+                <li>
+                  <a href="/leetcode-category/">LeetCode-category</a>
+                </li>
+              
+                <li>
+                  <a href="/leetcode-tag/">LeetCode-tag</a>
+                </li>
+              
+                <li>
+                  <a href="/archives/">archives</a>
+                </li>
+              
+                <li>
+                  <a href="/tags/">tags</a>
+                </li>
+              
+                <li>
+                  <a href="/portfolio-slim/">projects</a>
+                </li>
+              
+                <li>
+                  <a href="/support/">support</a>
+                </li>
+              
+                <li>
+                  <a href="/atom.xml">RSS</a>
+                </li>
+              
+          </ul>
+      </div>
+  </div></nav>
+
+
+  
+    <style>
+       .intro-header {
+          background-image: url('/img/sky-clouds-moon-horizon.jpg?h=350&amp;auto=compress&amp;cs=tinysrgb');
+      }
+    </style>
+
+    <div class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                    <div class="site-heading">
+                        <h1>Hexo建站：在 GitHub Pages 上搭建 Hexo 个人免费博客教程</h1>
+                        
+                        
+                          <span class="meta">
+                               <span class="meta-item">Author: Yingjie Hu</span>
+                               <span class="meta-item">Date: Mar 26, 2019</span>
+                               
+                                 <span class="meta-item">Updated On: Mar 26, 2019</span>
+                               
+                          </span>
+                          <div class="tags text-center">
+                              Categories: 
+                              <a class="tag" href="/categories/#Diary" title="Diary">Diary</a>
+                              
+                          </div>
+                          <div class="tags text-center">
+                              Tags: 
+                              <a class="tag" href="/tags/#PS3" title="PS3">PS3</a>
+                              
+                              <a class="tag" href="/tags/#Games" title="Games">Games</a>
+                              
+                          </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+</header>
+
+
+<!-- Main Content -->
+<!-- post.ejs -->
+<article>
+    <div class="container">
+      <div class="col-lg-8 col-lg-offset-1 col-sm-9">
+          
+            <div class="text-center"><div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5272bc2a7b3c1ddc" async="async"></script>
+</div>
+</div><hr>
+          
+          <div class="subscribe"><a href="http://eepurl.com/dh6iCD" target="_blank">Get Updated for Each Release!</a></div><p>
+          </p><p>近些年来很多用户都喜欢使用 GitHub Pages 来搭建 Hexo 静态博客网站，其最吸引人的莫过于完全免费使用，并且非常稳定。</p>
+<p>虽然搭建时比较麻烦，有点折腾，但是配置完成后，基本不需要操心维护的事，甚至放了几年都忘记了，打开来看文章依然还在。</p>
+<p>本文就详细介绍下如何使用 Hexo + GitHub 搭建免费个人博客网站的过程，尽量详细，让小白也可以搭建自己的 GitHub 博客。</p>
+<a id="more"></a>
+<hr>
+<p>为了照顾小白用户（第一次使用 GitHub 和 Hexo），尽可能详细说明，下面目录中第 3~5 步为最重要的步骤，其他内容如果已经会的可以选择性跳过。</p>
+<p><strong>内容目录：</strong></p>
+<ul>
+<li>简介：GitHub Pages 和 Hexo &amp; 原理</li>
+</ul>
+<ol>
+<li>准备：环境搭建<ul>
+<li>注意事项</li>
+<li>环境搭建</li>
+</ul>
+</li>
+<li>连接 Github</li>
+<li>创建 Github Pages 仓库</li>
+<li>本地安装 Hexo 博客程序<br> 4.1. 安装 Hexo<br> 4.2. Hexo 初始化和本地预览</li>
+<li>部署 Hexo 到 GitHub Pages</li>
+<li>绑定域名（可选）</li>
+<li>开始使用<br> 7.1. 发布文章<br> 7.2. 网站设置<br> 7.3. 更换主题<br> 7.4. 常用代码</li>
+</ol>
+<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><h4 id="GitHub-Pages-是什么？"><a href="#GitHub-Pages-是什么？" class="headerlink" title="GitHub Pages 是什么？"></a>GitHub Pages 是什么？</h4><ul>
+<li><a href="https://help.github.com/en/articles/what-is-github-pages" target="_blank" rel="noopener">What is GitHub Pages? - GitHub Help</a></li>
+</ul>
+<p>GitHub Pages 是由 GitHub 官方提供的一种免费的静态站点托管服务，让我们可以在 GitHub 仓库里托管和发布自己的静态网站页面。</p>
+<p>由于网站内容是公开在网络上的，因此注意不要发布隐私和敏感内容。当然也存在一定的使用限制：网站不超过 1 GB，月流量 100 GB 以内。</p>
+<h4 id="Hexo-是什么？"><a href="#Hexo-是什么？" class="headerlink" title="Hexo 是什么？"></a>Hexo 是什么？</h4><p>Hexo 是一个快速、简洁且高效的静态博客框架，它基于 Node.js 运行，可以将我们撰写的 Markdown 文档解析渲染成静态的 HTML 网页。</p>
+<h4 id="Hexo-GitHub-文章发布原理"><a href="#Hexo-GitHub-文章发布原理" class="headerlink" title="Hexo + GitHub 文章发布原理"></a>Hexo + GitHub 文章发布原理</h4><p>在本地撰写 Markdown 格式文章后，通过 Hexo 解析文档，渲染生成具有主题样式的 HTML 静态网页，再推送到 GitHub 上完成博文的发布。</p>
+<h4 id="优点和不足"><a href="#优点和不足" class="headerlink" title="优点和不足"></a>优点和不足</h4><p><strong>优点：</strong>完全免费；静态站点，轻量快速；可按需求自由定制改造；托管在 GitHub，安全省心；迁移方便……</p>
+<p><strong>不足：</strong>发文不便，依赖于本地环境；更适合个人博客使用；国内访问速度不稳定。</p>
+<h2 id="1-准备"><a href="#1-准备" class="headerlink" title="1. 准备"></a>1. 准备</h2><h4 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h4><ul>
+<li>输入代码时，核对准确，最好切换成英文输入法；</li>
+<li>将文中的 “用户名” 和 “邮箱” 替换为自己的 GitHub 账户名和绑定的邮箱；</li>
+<li>统一使用 Git Bash 进行操作（支持 Win、Mac、Linux）；</li>
+<li><code>#</code> 后面为注释，复制代码时不要复制；</li>
+<li>小白请严格按步骤进行，不要跳！</li>
+</ul>
+<h4 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h4><p>Hexo 基于 Node.js，搭建过程中还需要使用 npm 和 git，因此先搭建本地操作环境，安装 Node.js 和 Git。</p>
+<ul>
+<li>Node.js：<a href="https://nodejs.org/zh-cn/" target="_blank" rel="noopener">https://nodejs.org/zh-cn/</a></li>
+<li>Git：<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">https://git-scm.com/downloads</a></li>
+</ul>
+<p>下载 Node.js 和 Git 程序并安装。Node.js 默认安装 npm，一路点 “下一步” 按默认配置完成安装。</p>
+<p>安装完成后，Win+R 输入 cmd 并打开，依次输入 <code>node -v</code>、<code>npm -v</code> 和 <code>git --version</code> 并回车，出现程序版本号即可。</p>
+<p>￼</p>
+<h2 id="2-连接-Github"><a href="#2-连接-Github" class="headerlink" title="2. 连接 Github"></a>2. 连接 Github</h2><p>使用邮箱注册 <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a> 账户，选择免费账户（Free），并完成邮件验证。</p>
+<p>右键 -&gt; Git Bash Here，设置用户名和邮箱：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;GitHub 用户名&quot;</span><br><span class="line">git config --global user.email &quot;GitHub 邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p>创建 SSH 密匙，输入 <code>ssh-keygen -t rsa -C &quot;GitHub 邮箱&quot;</code>，然后一路回车。密匙生成位置在 C:\Users\Jack.ssh 目录下（要勾选显示“隐藏的项目”选项）。</p>
+<p>登陆 GitHub ，进入 Settings 页面，选择左边栏的 SSH and GPG keys，点击 New SSH key，添加密匙：</p>
+<p>￼</p>
+<p>Title 随便取个名字，用记事本打开公钥 id_rsa.pub 复制里面的内容，粘贴到 Key 中，点击 Add SSH key 完成添加。</p>
+<p>验证连接：打开 Git Bash，输入 <code>ssh -T git@github.com</code> 出现 “Are you sure……”，输入 yes 回车确认。</p>
+<p>￼</p>
+<p>显示 “Hi xxx! You’ve successfully authenticated……” 即连接成功。</p>
+<h2 id="3-创建-Github-Pages-仓库"><a href="#3-创建-Github-Pages-仓库" class="headerlink" title="3. 创建 Github Pages 仓库"></a>3. 创建 Github Pages 仓库</h2><p>GitHub 主页右上角加号 -&gt; New repository。</p>
+<p>Repository name 中输入 <code>用户名.github.io</code>，勾选 “Initialize this repository with a README”，Description 选填。填好后点击 Create repository 创建。</p>
+<p>￼</p>
+<p>创建后默认自动启用 HTTPS，博客地址为：https://用户名.github.io</p>
+<h2 id="4-本地安装-Hexo-博客程序"><a href="#4-本地安装-Hexo-博客程序" class="headerlink" title="4. 本地安装 Hexo 博客程序"></a>4. 本地安装 Hexo 博客程序</h2><p>新建一个文件夹用来存放 Hexo 的网站文件，如 Hexo-Blog。打开该文件夹，右键 -&gt; Git Bash Here。</p>
+<h4 id="4-1-安装-Hexo"><a href="#4-1-安装-Hexo" class="headerlink" title="4.1 安装 Hexo"></a>4.1 安装 Hexo</h4><p>使用 npm 一键安装 Hexo 博客程序：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>Mac 用户需要管理员权限（sudo），运行这条命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装时间有点久，界面没任何反应，耐心等待，安装完成后如下图。</p>
+<p>￼</p>
+<h4 id="4-2-Hexo-初始化和本地预览"><a href="#4-2-Hexo-初始化和本地预览" class="headerlink" title="4.2 Hexo 初始化和本地预览"></a>4.2 Hexo 初始化和本地预览</h4><p>输入 <code>hexo init</code> 进行初始化，显示 “Start blogging with Hexo!”，然后运行 <code>npm install</code> 安装所需组件。</p>
+<p>完成后依次输入下面命令，启动本地服务器进行预览：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g  # 生成页面</span><br><span class="line">hexo s  # 启动预览</span><br></pre></td></tr></table></figure>
+<p><strong>访问 <a href="http://localhost:4000，出现" target="_blank" rel="noopener">http://localhost:4000，出现</a> Hexo 默认页面，本地博客安装成功！</strong></p>
+<p>￼</p>
+<p><strong>Tips：</strong>如果出现页面加载不出来，可能是端口被占用了。Ctrl+C 关闭服务器，运行 <code>hexo server -p 5000</code> 更改端口号后重试。</p>
+<p>Hexo 博客文件夹目录结构如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml  # 网站的配置信息</span><br><span class="line">├── package.json  # 应用程序的信息</span><br><span class="line">├── scaffolds  # 模版文件夹</span><br><span class="line">├── source  # 存放用户资源，如 Markdown 文档</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">├── themes  # 主题文件夹</span><br><span class="line">└──public  # 网站文件</span><br></pre></td></tr></table></figure>
+<h2 id="5-部署-Hexo-到-GitHub-Pages"><a href="#5-部署-Hexo-到-GitHub-Pages" class="headerlink" title="5. 部署 Hexo 到 GitHub Pages"></a>5. 部署 Hexo 到 GitHub Pages</h2><p>本地博客测试成功后，就是上传到 GitHub 进行部署，使其能够在网络上访问。</p>
+<p>首先安装 hexo-deployer-git：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>然后修改 _config.yml 文件末尾的 Deployment 部分，修改成如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:用户名/用户名.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>完成后运行 <code>hexo d</code> 将网站上传部署到 GitHub Pages。完成！这时访问我们的 GitHub 域名 https://用户名.github.io 就可以看到 Hexo 网站了。</p>
+<h2 id="6-绑定域名（可选）"><a href="#6-绑定域名（可选）" class="headerlink" title="6. 绑定域名（可选）"></a>6. 绑定域名（可选）</h2><p>博客搭建完成使用的是 GitHub 的子域名（用户名.github.io），我们可以为 Hexo 博客绑定自己的域名替换 GitHub 域名，更加个性化和专业。</p>
+<h4 id="6-1-域名注册和解析"><a href="#6-1-域名注册和解析" class="headerlink" title="6.1 域名注册和解析"></a>6.1 域名注册和解析</h4><ul>
+<li>域名注册和解析教程：<a href="https://go2think.com/namesilo-tutorial/" target="_blank" rel="noopener">Namesilo 域名购买及使用教程</a></li>
+</ul>
+<p>按上面教程注册域名，打开 DNS 设置，删除自带的记录，然后添加 CNAME 记录将 www 域名解析指向 <code>用户名.github.io</code>。</p>
+<p>￼</p>
+<h4 id="6-2-绑定域名到-Hexo-博客"><a href="#6-2-绑定域名到-Hexo-博客" class="headerlink" title="6.2 绑定域名到 Hexo 博客"></a>6.2 绑定域名到 Hexo 博客</h4><p>进入本地博客文件夹的 source 目录，打开记事本，里面输入自己的域名，如 <a href="http://www.example.com，保存名称为" target="_blank" rel="noopener">www.example.com，保存名称为</a> “CNAME”，格式为 “所有文件”（无 .txt 后缀）。</p>
+<p>清除缓存等文件并重新发布网站：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean  # 清除缓存文件等</span><br><span class="line">hexo g  # 生成页面</span><br><span class="line">hexo s  # 启动预览</span><br></pre></td></tr></table></figure>
+<p>现在就可以使用自己的域名访问 Hexo 博客了。</p>
+<h4 id="6-3-开启-HTTPS"><a href="#6-3-开启-HTTPS" class="headerlink" title="6.3 开启 HTTPS"></a>6.3 开启 HTTPS</h4><p>配置自己的域名后，需要我们手动开启 HTTPS。打开博客所在 GitHub 仓库，Settings -&gt; 下拉找到 GitHub Pages -&gt; 勾选 Enforce HTTPS。</p>
+<p>￼</p>
+<p>HTTPS 证书部署成功需要一定时间，等大概几分钟再访问域名，就可以看到域名前面的小绿锁了，HTTPS 配置完成！</p>
+<h2 id="7-开始使用"><a href="#7-开始使用" class="headerlink" title="7. 开始使用"></a>7. 开始使用</h2><h4 id="7-1-发布文章"><a href="#7-1-发布文章" class="headerlink" title="7.1 发布文章"></a>7.1 发布文章</h4><p>进入博客所在目录，右键打开 Git Bash Here，创建博文：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;My New Post&quot;</span><br></pre></td></tr></table></figure>
+<p>然后 source 文件夹中会出现一个 My New Post.md 文件，就可以使用 Markdown 编辑器在该文件中撰写文章了。</p>
+<p>写完后运行 <code>hexo g</code> 和 <code>hexo d</code> 将文章渲染并部署到 GitHub Pages 上完成发布。</p>
+<hr>
+<p>也可以不使用命令自己创建 .md 文件，只需在文件开头手动加入如下格式 Front-matter 即可，发布同上。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hello World  # 标题</span><br><span class="line">date: 2019/3/26 hh:mm:ss  # 时间</span><br><span class="line">categories:  # 分类</span><br><span class="line">- Diary</span><br><span class="line">tags:  # 标签</span><br><span class="line">- PS3</span><br><span class="line">- Games</span><br><span class="line">---</span><br><span class="line">正文</span><br></pre></td></tr></table></figure>
+<h4 id="7-2-网站设置"><a href="#7-2-网站设置" class="headerlink" title="7.2 网站设置"></a>7.2 网站设置</h4><h4 id="7-3-更换主题"><a href="#7-3-更换主题" class="headerlink" title="7.3 更换主题"></a>7.3 更换主题</h4><h4 id="7-4-常用命令"><a href="#7-4-常用命令" class="headerlink" title="7.4 常用命令"></a>7.4 常用命令</h4><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>参考：<br><a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener">文档 | Hexo</a><br>Hexo 官网：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">https://hexo.io/zh-cn/</a><br>GitHub：<a href="https://github.com/hexojs/hexo" target="_blank" rel="noopener">https://github.com/hexojs/hexo</a></p>
+
+          
+            <a href="https://www.patreon.com/arsnippet" target="_blank"><img src="/img/patreon.png" alt="support my work at patron"></a> <a href="https://arsnippet.freeflarum.com/" target="_blank"><img src="/img/forum.jpg" alt="support my work at patron"></a> <a href="https://discord.gg/CB6CPzq" target="_blank"><img src="/img/discord.png" alt="Join the Discord"></a>
+          
+          <hr>
+          <ul class="pager">
+              
+              
+              <li class="next">
+                  <a href="/My-New-Post/" data-toggle="tooltip" data-placement="top" title="My New Post">Next Post&rarr;</a>
+              </li>
+              
+          </ul>
+        
+  <br>
+  
+  <!-- disqus start -->
+  <div class="comment">
+    <div id="disqus_thread" class="disqus-thread"></div>
+      <script>
+      var disqus_shortname = 'hexo-a-rsnippet';
+      
+      var disqus_url = 'http://yoursite.com/新建文本文档/';
+      
+      (function(){
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+  <!-- disqus end -->
+  
+
+  
+  
+
+
+        
+  <div class="hidden-xs col-sm-3 toc-col">
+    <div class="toc-wrap">
+        Table of Contents
+        
+          <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#简介"><span class="toc-number">1.</span> <span class="toc-text">简介</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#GitHub-Pages-是什么？"><span class="toc-number">1.0.1.</span> <span class="toc-text">GitHub Pages 是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-是什么？"><span class="toc-number">1.0.2.</span> <span class="toc-text">Hexo 是什么？</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Hexo-GitHub-文章发布原理"><span class="toc-number">1.0.3.</span> <span class="toc-text">Hexo + GitHub 文章发布原理</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#优点和不足"><span class="toc-number">1.0.4.</span> <span class="toc-text">优点和不足</span></a></li></ol></li></ol><li class="toc-item toc-level-2"><a class="toc-link" href="#1-准备"><span class="toc-number">2.</span> <span class="toc-text">1. 准备</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#注意事项"><span class="toc-number">2.0.1.</span> <span class="toc-text">注意事项</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#环境搭建"><span class="toc-number">2.0.2.</span> <span class="toc-text">环境搭建</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-连接-Github"><span class="toc-number">3.</span> <span class="toc-text">2. 连接 Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-创建-Github-Pages-仓库"><span class="toc-number">4.</span> <span class="toc-text">3. 创建 Github Pages 仓库</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-本地安装-Hexo-博客程序"><span class="toc-number">5.</span> <span class="toc-text">4. 本地安装 Hexo 博客程序</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#4-1-安装-Hexo"><span class="toc-number">5.0.1.</span> <span class="toc-text">4.1 安装 Hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4-2-Hexo-初始化和本地预览"><span class="toc-number">5.0.2.</span> <span class="toc-text">4.2 Hexo 初始化和本地预览</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-部署-Hexo-到-GitHub-Pages"><span class="toc-number">6.</span> <span class="toc-text">5. 部署 Hexo 到 GitHub Pages</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6-绑定域名（可选）"><span class="toc-number">7.</span> <span class="toc-text">6. 绑定域名（可选）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#6-1-域名注册和解析"><span class="toc-number">7.0.1.</span> <span class="toc-text">6.1 域名注册和解析</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-2-绑定域名到-Hexo-博客"><span class="toc-number">7.0.2.</span> <span class="toc-text">6.2 绑定域名到 Hexo 博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#6-3-开启-HTTPS"><span class="toc-number">7.0.3.</span> <span class="toc-text">6.3 开启 HTTPS</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#7-开始使用"><span class="toc-number">8.</span> <span class="toc-text">7. 开始使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#7-1-发布文章"><span class="toc-number">8.0.1.</span> <span class="toc-text">7.1 发布文章</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-2-网站设置"><span class="toc-number">8.0.2.</span> <span class="toc-text">7.2 网站设置</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-3-更换主题"><span class="toc-number">8.0.3.</span> <span class="toc-text">7.3 更换主题</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#7-4-常用命令"><span class="toc-number">8.0.4.</span> <span class="toc-text">7.4 常用命令</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#结语"><span class="toc-number">9.</span> <span class="toc-text">结语</span></a></li>
+        
+    </div>
+  </div>
+
+
+      </div>
+  </div>
+</article>
+
+<!-- Footer -->
+<!-- footer.ejs -->
+<footer>
+    <div class="text-center">
+      <ul class="list-inline">
+          
+              <li>
+                  <a href="/atom.xml" target="_blank">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-rss fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+          
+              <li>
+                  <a target="_blank" href="https://twitter.com/yingjieYJH">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+          
+
+          
+
+          
+
+          
+              <li>
+                  <a target="_blank" href="https://github.com/huyingjie">
+                      <span class="fa-stack fa-lg">
+                          <i class="fa fa-circle fa-stack-2x"></i>
+                          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                      </span>
+                  </a>
+              </li>
+          
+
+          
+
+          
+
+      </ul>
+     <div class="text-muted copyright">
+            &copy;
+            
+            2015 - 2019
+            
+            
+              <i class="fa fa-heart"></i>
+            
+            Yingjie Hu
+        <br>
+          
+              Powered by <a target="_blank" href="https://hexo.io">Hexo</a>
+          
+          
+            |
+          
+          
+              Theme - <a href="https://github.com/huyingjie/hexo-theme-A-RSnippet" target="_blank">A-RSnippet</a> v0.1.0
+          
+          
+      </div>
+    </div>
+</footer>
+
+<!-- Custom Theme JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+
+<!--fastClick.js -->
+<script>
+    async("//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js", function(){
+        var $nav = document.querySelector("nav");
+        if($nav) FastClick.attach($nav);
+    })
+</script>
+
+
+
+</body>
+
+</html>
